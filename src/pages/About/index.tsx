@@ -4,15 +4,16 @@ export const About = () => {
   return (
     <Container
       id="about"
-      initial={{ opacity: 0, x: -400 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -400 }}
-      transition={{ duration: 0.6 }}
     >
       <ImageContent>
         <img src={AboutMe} alt="" />
       </ImageContent>
-      <TextContent>
+      <TextContent
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.6 }}
+      >
         <h1>SOBRE MIM</h1>
         <div>
           <p>

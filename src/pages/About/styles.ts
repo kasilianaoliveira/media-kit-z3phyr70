@@ -59,7 +59,7 @@ export const ImageContent = styled.div`
   }
 `;
 
-export const TextContent = styled.div`
+export const TextContent = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   padding: 0 20px;
