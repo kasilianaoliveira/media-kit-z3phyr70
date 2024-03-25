@@ -1,9 +1,11 @@
-import { CardContent, CardSocialContent, Container, SocialBackground, SocialContent, Title } from "./styled"
+import { CardContent, CardSocialContent, Container, SocialContent, Title } from "./styled"
 import PerfilImg from "../../assets/contact.svg"
+
 import { MdEmail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
+import { SocialBackground } from "./components";
 export const Contact = () => {
   return (
     <Container
@@ -19,32 +21,25 @@ export const Contact = () => {
             Entre em contato comigo para discutirmos como podemos trabalhar juntos e criar
             algo incrível.
           </p>
-          <SocialContent 
+          <SocialContent
             initial={{ opacity: 0, x: -300 }}
             whileInView={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -300 }}
             transition={{ duration: 0.6 }}
           >
-            <SocialBackground>
-              <a href="mailto:lucasmendeslima21@gmail.com">
-                <MdEmail size={50} color="white" />
-              </a>
+            <SocialBackground href="mailto:lucasmendeslima21@gmail.com" >
+              <MdEmail size={50} color="white" />
             </SocialBackground>
-            <SocialBackground>
-              <a href="https://www.instagram.com/lucas_z3phyr70/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram size={50} color="white" />
-              </a>
+            <SocialBackground href="https://www.instagram.com/lucas_z3phyr70/" >
+              <FaInstagram size={50} color="white" />
             </SocialBackground>
-            <SocialBackground>
-              <a href="https://www.twitch.tv/z3phyr70" target="_blank" rel="noopener noreferrer">
-                <FaTwitch size={50} color="white" />
-              </a>
+            <SocialBackground href="https://www.twitch.tv/z3phyr70" >
+              <FaTwitch size={50} color="white" />
             </SocialBackground>
-            <SocialBackground>
-              <a href="https://www.tiktok.com/@zephyr70_" target="_blank" rel="noopener noreferrer">
-                <FaTiktok size={50} color="white" />
-              </a>
+            <SocialBackground href="https://www.tiktok.com/@zephyr70_" >
+              <FaTiktok size={50} color="white" />
             </SocialBackground>
+
           </SocialContent>
         </CardSocialContent>
         <div>
