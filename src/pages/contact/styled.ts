@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import Background from "../../assets/vector-social.svg"
+import background from "../../assets/vector-social.svg"
 import { motion } from "framer-motion";
+
 export const Container = styled(motion.div)`
   display: flex;
   margin-top: 3.125rem;
@@ -52,7 +53,7 @@ export const SocialBackground = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(${Background});
+  background-image: url(${background});
   background-repeat: no-repeat;
   width: 170px;
   height: 165px; 
