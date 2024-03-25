@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import background from "../../assets/vector-social.svg"
+import background from "../../assets/social.svg"
 import { motion } from "framer-motion";
 
 export const Container = styled(motion.div)`
