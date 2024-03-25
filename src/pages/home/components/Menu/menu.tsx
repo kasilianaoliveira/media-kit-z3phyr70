@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { BoxStyled, ButtonStyled, ButtonStyledClose, ButtonStyledContact, Container, MenuStyled, SpanBigStyled, SpanStyled } from "./styles";
 
