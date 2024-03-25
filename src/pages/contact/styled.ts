@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { FaInstagram, FaTiktok, FaTwitch } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const Container = styled(motion.div)`
   display: flex;
@@ -12,6 +14,10 @@ export const Container = styled(motion.div)`
 export const Title = styled.h1`
   font-size: 3.75rem;
   font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
 `;
 export const Content = styled.div`
   display: flex;
@@ -39,6 +45,12 @@ export const CardSocialContent = styled.div`
   p {
     font-size: 1.25rem;
   }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const SocialContent = styled(motion.div)`
@@ -46,4 +58,43 @@ export const SocialContent = styled(motion.div)`
   width: 100%;
   margin-top: 100px;
   gap: 20px;
+`;
+
+export const StyledEmailIcon = styled(MdEmail)`
+  color: var(--white);
+  font-size: 3.125rem;
+
+  @media (max-width: 412px) {
+    font-size: 1.875rem;
+  }
+`;
+
+export const StyledInstagramIcon = styled(FaInstagram)`
+  color: var(--white);
+  font-size: 3.125rem;
+
+  @media (max-width: 412px) {
+    font-size: 1.875rem;
+    color: var(--black);
+  }
+`;
+
+export const StyledTiktokIcon = styled(FaTiktok)`
+  color: var(--white);
+  font-size: 3.125rem;
+
+  @media (max-width: 412px) {
+    font-size: 1.875rem;
+    color: var(--black);
+  }
+`;
+
+export const StyledTwitchIcon = styled(FaTwitch)`
+  color: var(--white);
+  font-size: 3.125rem;
+
+  @media (max-width: 412px) {
+    font-size: 1.875rem;
+    color: var(--black);
+  }
 `;

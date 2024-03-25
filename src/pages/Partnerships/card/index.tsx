@@ -12,7 +12,6 @@ export const Card = ({ children, program }: ICardProps) => {
       whileInView={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -300 }}
       transition={{ duration: 0.6 }}
-
     >
       <Icon>
         {children}

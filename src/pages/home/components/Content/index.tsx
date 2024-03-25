@@ -14,7 +14,7 @@ export const Content = () => {
         <span>Streamer</span>
       </BoxContentTitle>
       <BoxContentImage>
-        <img src={SquareImg} alt="" />
+        <img src={SquareImg} alt="Imagem de Zephyr70" />
       </BoxContentImage>
     </Box>
   )

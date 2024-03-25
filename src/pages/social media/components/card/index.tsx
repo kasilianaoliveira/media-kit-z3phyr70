@@ -18,9 +18,9 @@ export const Card = ({ children, viewers }: ICardProps) => {
         {children}
       </Icon>
       <Viewers
-        initial={{ opacity: 0, x: -300 }}
+        initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -300 }}
+        exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.6 }}
       >
         <p>{viewers}+</p>

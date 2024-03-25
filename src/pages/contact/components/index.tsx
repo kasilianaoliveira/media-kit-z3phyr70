@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Background, SocialLink } from "./styles";
+import { Background, SocialImg, SocialLink } from "./styles";
 import Social from "../../../assets/social.svg"
 
 interface SocialBackground {
@@ -9,7 +9,7 @@ interface SocialBackground {
 export const SocialBackground = ({children, href}: SocialBackground) => {
   return (
     <Background>
-      <img src={Social}/>
+      <SocialImg src={Social}/>
       <SocialLink href={href} target="_blank" rel="noopener noreferrer">
         {children}
       </SocialLink>

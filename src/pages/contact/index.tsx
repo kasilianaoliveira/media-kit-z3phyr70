@@ -1,10 +1,5 @@
-import { CardContent, CardSocialContent, Container, SocialContent, Title } from "./styled"
+import { CardContent, CardSocialContent, Container, SocialContent, Title, StyledTiktokIcon, StyledEmailIcon, StyledInstagramIcon, StyledTwitchIcon } from "./styled"
 import PerfilImg from "../../assets/contact.svg"
-
-import { MdEmail } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitch } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
 import { SocialBackground } from "./components";
 export const Contact = () => {
   return (
@@ -28,16 +23,16 @@ export const Contact = () => {
             transition={{ duration: 0.6 }}
           >
             <SocialBackground href="mailto:lucasmendeslima21@gmail.com" >
-              <MdEmail size={50} color="white" />
+              <StyledEmailIcon />
             </SocialBackground>
             <SocialBackground href="https://www.instagram.com/lucas_z3phyr70/" >
-              <FaInstagram size={50} color="white" />
+              <StyledInstagramIcon />
             </SocialBackground>
             <SocialBackground href="https://www.twitch.tv/z3phyr70" >
-              <FaTwitch size={50} color="white" />
+              <StyledTwitchIcon />
             </SocialBackground>
             <SocialBackground href="https://www.tiktok.com/@zephyr70_" >
-              <FaTiktok size={50} color="white" />
+              <StyledTiktokIcon />
             </SocialBackground>
 
           </SocialContent>

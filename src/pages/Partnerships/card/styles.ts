@@ -12,6 +12,15 @@ export const Container = styled(motion.div)`
   position: relative;
   cursor: pointer;
 
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 200px;
+  }
+
+  @media (max-width: 412px) {
+    width: 350px;
+    height: 150px;
+  }
   background: white;
 `;
 
@@ -25,8 +34,15 @@ export const Icon = styled.div`
   border-radius: 16px;
   margin-top: 24px;
 
-  
-  /* background: #ccc; */
+  @media (max-width: 768px) {
+    width: 220px;
+    height: 123px;
+  }
+
+  @media (max-width: 412px) {
+    width: 150px;
+    height: 55px;
+  }
 `;
 
 export const Viewers = styled(motion.div)`
@@ -35,9 +51,24 @@ export const Viewers = styled(motion.div)`
   align-items: center;
   padding: 10px 0;
 
-  p, span {
+  p,
+  span {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: var(--black);
   }
-`
+
+  @media (max-width: 768px) {
+    p,
+    span {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    p,
+    span {
+      font-size: .875rem;
+    }
+  }
+`;

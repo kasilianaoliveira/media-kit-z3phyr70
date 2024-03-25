@@ -14,6 +14,16 @@ export const Container = styled(motion.div)`
 
   background: rgb(85,5,222);
   background: linear-gradient(180deg, rgba(85,5,222,1) 0%, rgba(129,9,143,1) 100%);
+
+  @media (max-width: 768px) {
+    width: 350px;
+    height: 200px;
+  }
+
+  @media (max-width: 412px) {
+    width: 350px;
+    height: 150px;
+  }
 `;
 
 export const Icon = styled.div`
@@ -26,6 +36,15 @@ export const Icon = styled.div`
   border-radius: 16px;
   margin-top: 24px;
   background: var(--white);
+
+  @media (max-width: 768px) {
+    width: 220px;
+  }
+
+  @media (max-width: 412px) {
+    width: 120px;
+    height: 123px;
+  }
 `;
 
 export const Viewers = styled(motion.div)`
@@ -37,5 +56,12 @@ export const Viewers = styled(motion.div)`
   p, span {
     font-weight: bold;
     font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    p,
+    span {
+      font-size: 1rem;
+    }
   }
 `
