@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
   margin-top: 30px;
   height: 50px;
-  border-radius: 16px;
+  border-radius: 12px;
   background-color: var(--white);
   color: var(--black);
   font-size: 14px;

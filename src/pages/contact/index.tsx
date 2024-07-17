@@ -1,5 +1,5 @@
-import { CardContent, CardSocialContent, Container, SocialContent, Title, StyledTiktokIcon, StyledEmailIcon, StyledInstagramIcon, StyledTwitchIcon } from "./styled"
-import PerfilImg from "../../assets/contact.svg"
+import { CardContent, CardSocialContent, Container, SocialContent, Title, StyledTiktokIcon, StyledEmailIcon, StyledInstagramIcon, StyledTwitchIcon, ImgBack, ContentImg } from "./styled"
+import PerfilImg from "../../assets/contact.png"
 import { SocialBackground } from "./components";
 export const Contact = () => {
   return (
@@ -37,9 +37,9 @@ export const Contact = () => {
 
           </SocialContent>
         </CardSocialContent>
-        <div>
-          <img src={PerfilImg} alt="Foto de Z3PHYR70" />
-        </div>
+        <ContentImg>
+          <ImgBack src={PerfilImg} alt="Foto de Z3PHYR70" />
+        </ContentImg>
       </CardContent>
     </Container>
   )

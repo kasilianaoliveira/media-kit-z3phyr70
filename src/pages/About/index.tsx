@@ -17,7 +17,7 @@ export const About = () => {
         <h1>SOBRE MIM</h1>
         <div>
           <p>
-            Olá a todos, sou Lucas Mendes, conhecido nos jogos como Zephyr70. Sou um entusiasta de jogos e entusiasta de
+            Olá a todos, sou Lucas Mendes, conhecido nos jogos como Z3phyr70. Sou um entusiasta de jogos e entusiasta de
             transmitir minha paixão por jogos para uma comunidade online. Desde agosto de 2023, tenho o prazer de fazer
             lives na Twitch, onde me dedico principalmente a jogar Valorant.
           </p>

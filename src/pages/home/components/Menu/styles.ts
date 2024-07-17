@@ -23,7 +23,7 @@ export const SpanStyled = styled.span`
   width: 56px;
   height: 56px;
   background: var(--white);
-  border-radius: 16px;
+  border-radius: 12px;
   @media (max-width: 768px) {
     height: 40px;
   }
@@ -38,7 +38,7 @@ export const SpanBigStyled = styled.span`
   height: 56px;
   background: #000000;
   opacity: 0.6;
-  border-radius: 16px;
+  border-radius: 12px;
   @media (max-width: 768px) {
     height: 40px;
   }
@@ -81,10 +81,10 @@ export const MenuStyled = styled.ul<ButtonProps>`
 `;
 
 export const ButtonStyled = styled.button<ButtonProps>`
-  padding: 0.8rem 1.5rem;
+  padding: 0.5rem 1rem;
   color: var(--white);
   font-weight: bold;
-  border-radius: 1rem;
+  border-radius: 12px;
   background: rgb(238, 7, 242);
   background: linear-gradient(
     36deg,
@@ -120,6 +120,11 @@ export const ButtonStyledContact = styled.button`
   &:hover {
     transform: scale(1.1);
   }
+
+  @media (max-width: 768px) {
+    padding: 0.8rem 1rem;
+    font-weight: 600;
+  }
 `;
 export const ButtonStyledClose = styled.button<ButtonProps>`
   padding: 0.8rem 1rem;
@@ -127,15 +132,13 @@ export const ButtonStyledClose = styled.button<ButtonProps>`
   align-items: center;
   color: var(--white);
   font-weight: bold;
-  border-radius: 16px;
-  background: rgb(238, 7, 242);
-  background: linear-gradient(
-    36deg,
-    rgba(238, 7, 242, 1) 0%,
-    rgba(100, 2, 228, 1) 57%,
-    rgba(24, 11, 45, 1) 100%
-  );
+  background-color: transparent;
+
   position: absolute;
   top: 10px;
   right: 10px;
+
+  svg {
+    color: #333;
+  }
 `;

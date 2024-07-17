@@ -6,7 +6,7 @@ export const Container = styled(motion.div)`
   align-items: center;
   flex-direction: column;
   padding: 0 20px;
-  border-radius: 16px;
+  border-radius: 12px;
   width: 450px;
   height: 300px;
   position: relative;
@@ -31,7 +31,7 @@ export const Icon = styled.div`
   padding: 20px 0;
   width: 320px;
   height: 223px;
-  border-radius: 16px;
+  border-radius: 12px;
   margin-top: 24px;
 
   @media (max-width: 768px) {

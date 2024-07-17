@@ -5,10 +5,8 @@ export const Background = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-
-  
   @media (max-width: 412px) {
-    position: static;
+    flex-direction: column;
   }
   
 `;
@@ -20,4 +18,8 @@ export const SocialLink = styled.a`
   
 `;
 export const SocialImg = styled.img`
+
+@media (max-width: 475px) {
+    display: none;
+  }
 `

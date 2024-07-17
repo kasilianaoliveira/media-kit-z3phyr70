@@ -3,16 +3,18 @@ import styled from "styled-components";
 
 export const Container = styled(motion.div)`
   display: flex;
+  padding: 0 20px;
   align-items: center;
   justify-content: space-between;
   position: relative;
   width: 100%;
+  height: 100vh;
 
   &::after {
     content: "";
     border-radius: 2px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     left: 0;
     width: 100%;
     height: 5px;
@@ -31,13 +33,23 @@ export const Container = styled(motion.div)`
     margin: 0 auto;
 
     @media (max-width: 768px) {
-    h1 {
-      font-size: 1.8rem;
+      h1 {
+        font-size: 1.8rem;
+      }
     }
-  }
 
     &::after {
       bottom: -10px;
+    }
+  }
+
+  @media (max-width: 412px) {
+    margin-top: 100px;
+    margin-bottom: 180px;
+
+
+    &::after {
+      bottom: -100px;
     }
   }
 `;
@@ -76,8 +88,7 @@ export const TextContent = styled(motion.div)`
 
   @media (max-width: 412px) {
     p {
-
-     font-size:14px;
+      font-size: 14px;
     }
   }
 `;

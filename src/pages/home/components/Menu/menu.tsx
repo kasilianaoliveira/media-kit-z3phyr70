@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { BoxStyled, ButtonStyled, ButtonStyledClose, ButtonStyledContact, Container, MenuStyled, SpanBigStyled, SpanStyled } from "./styles";
+import { BoxStyled, ButtonStyled, ButtonStyledClose, ButtonStyledContact, Container, MenuStyled, SpanBigStyled } from "./styles";
 
 export const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -12,7 +12,6 @@ export const Menu = () => {
   return (
     <Container>
       <BoxStyled>
-        <SpanStyled></SpanStyled>
         <SpanBigStyled></SpanBigStyled>
       </BoxStyled>
       <ButtonStyled showMenu={showMenu} onClick={toggleMenu}>

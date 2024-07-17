@@ -19,6 +19,9 @@ export const Partnerships = () => {
         <Card program='Programa de Afiliados'>
           <img src={AliexpressLogo} alt="" />
         </Card>
+        <Card program='Programa de Afiliados'>
+          <img src={AliexpressLogo} alt="" />
+        </Card>
       </Content>
     </Container>
   )
