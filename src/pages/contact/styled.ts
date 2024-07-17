@@ -12,7 +12,7 @@ export const Container = styled(motion.div)`
   width: 100%;
 `;
 export const Title = styled.h1`
-  font-size: 3.75rem;
+  font-size: 2.5rem;
   font-weight: bold;
 
   @media (max-width: 768px) {

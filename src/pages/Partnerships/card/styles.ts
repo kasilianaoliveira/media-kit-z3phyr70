@@ -12,6 +12,11 @@ export const Container = styled(motion.div)`
   position: relative;
   cursor: pointer;
 
+  img {
+    max-width: 180px;
+    width: 100%;
+  }
+
   @media (max-width: 768px) {
     width: 350px;
     height: 200px;
@@ -68,7 +73,7 @@ export const Viewers = styled(motion.div)`
   @media (max-width: 768px) {
     p,
     span {
-      font-size: .875rem;
+      font-size: 0.875rem;
     }
   }
 `;
