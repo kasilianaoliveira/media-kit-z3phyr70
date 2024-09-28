@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const Container = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
@@ -10,22 +11,6 @@ export const Container = styled(motion.div)`
   width: 100%;
   height: 100vh;
 
-  &::after {
-    content: "";
-    border-radius: 2px;
-    position: absolute;
-    bottom: 100px;
-    left: 0;
-    width: 100%;
-    height: 5px;
-    background: rgb(238, 7, 242);
-    background: linear-gradient(
-      36deg,
-      rgba(238, 7, 242, 1) 0%,
-      rgba(100, 2, 228, 1) 57%,
-      rgba(24, 11, 45, 1) 100%
-    );
-  }
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -54,6 +39,8 @@ export const Container = styled(motion.div)`
   }
 `;
 
+
+
 export const ImageContent = styled.div`
   img {
     width: 500px;
@@ -71,19 +58,26 @@ export const ImageContent = styled.div`
   }
 `;
 
+
 export const TextContent = styled(motion.div)`
   display: flex;
-  flex-wrap: wrap;
   padding: 0 20px;
-  flex-direction: column;
   align-items: center;
-  gap: 10px;
+  margin-top: 60px;
+  gap: 40px;
+
   div {
     display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    p{
+      /* font-size: 20px; */
+      line-height: 1.8;
+      text-align: justify;
+    }
   }
 
   @media (max-width: 412px) {

@@ -1,20 +1,24 @@
-import AboutMe from "../../assets/about.svg"
+import AboutMe from "../../assets/about.webp"
+import { Title } from "../../components/Title"
+import { Experience } from "./experience"
 import { Container, ImageContent, TextContent } from "./styles"
 export const About = () => {
   return (
     <Container
       id="about"
     >
-      <ImageContent>
-        <img src={AboutMe} alt="" />
-      </ImageContent>
+      <Title title="Sobre mim"/>
+
       <TextContent
-        initial={{ opacity: 0, x: -100 }}
+        initial={{ opacity: 0, x: -200 }}
         whileInView={{ opacity: 1, x: 0 }}
-        exit={{ opacity: 0, x: -100 }}
+        exit={{ opacity: 0, x: -200 }}
         transition={{ duration: 0.6 }}
       >
-        <h1>SOBRE MIM</h1>
+        <ImageContent>
+          <img src={AboutMe} alt="" />
+        </ImageContent>
+        {/* <h1>SOBRE MIM</h1> */}
         <div>
           <p>
             Olá a todos, sou Lucas Mendes, conhecido nos jogos como Z3phyr70. Sou um entusiasta de jogos e entusiasta de
@@ -37,6 +41,8 @@ export const About = () => {
           </p>
         </div>
       </TextContent>
+      
+      <Experience/>
     </Container>
   )
 }
