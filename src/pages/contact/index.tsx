@@ -22,16 +22,23 @@ export const Contact = () => {
             exit={{ opacity: 0, x: -300 }}
             transition={{ duration: 0.6 }}
           >
-            <SocialBackground href="mailto:lucasmendeslima21@gmail.com" >
+            <SocialBackground href="mailto:lucasmendeslima21@gmail.comAQUI"
+              aria-label="Enviar email para lucasmendeslima21@gmail.com">
               <StyledEmailIcon />
             </SocialBackground>
-            <SocialBackground href="https://www.instagram.com/lucas_z3phyr70/" >
+
+            <SocialBackground href="https://www.instagram.com/lucas_z3phyr70/"
+              aria-label="Visitar perfil do Instagram de lucas_z3phyr70">
               <StyledInstagramIcon />
             </SocialBackground>
-            <SocialBackground href="https://www.twitch.tv/z3phyr70" >
+
+            <SocialBackground href="https://www.twitch.tv/z3phyr70"
+              aria-label="Visitar canal do Twitch de z3phyr70">
               <StyledTwitchIcon />
             </SocialBackground>
-            <SocialBackground href="https://www.tiktok.com/@zephyr70_" >
+
+            <SocialBackground href="https://www.tiktok.com/@zephyr70_"
+              aria-label="Visitar perfil do TikTok de zephyr70_">
               <StyledTiktokIcon />
             </SocialBackground>
 
