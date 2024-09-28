@@ -1,10 +1,9 @@
 
-import { About } from './pages/About'
-import { Partnerships } from './pages/Partnerships'
+import { About } from './pages/about'
+import { Partnerships } from './pages/partnerships'
 import { Contact } from './pages/contact'
 import { Footer } from './pages/footer'
 import { Home } from './pages/home'
-import { SocialMedia } from './pages/social media'
 import { Main } from './styles'
 
 function App() {
@@ -14,7 +13,7 @@ function App() {
       <Main>
         <Home />
         <About/>
-        <SocialMedia/>
+        {/* <SocialMedia/> */}
         <Partnerships/>
         <Contact/>
         <Footer/>
