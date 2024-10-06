@@ -20,7 +20,7 @@ export const Container = styled(motion.div)`
   @media (max-width: 468px) {
     height: 300px;
     padding: 20px;
-    width:auto;
+    /* width:auto; */
     img {
       /* width: 150px; */
     }

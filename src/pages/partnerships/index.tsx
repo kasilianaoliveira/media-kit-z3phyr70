@@ -3,6 +3,7 @@ import TwitchLogo from '../../assets/twitch.png';
 import AmazonLogo from '../../assets/amazon.png';
 import MercadoLivreLogo from '../../assets/mercado-livre.png';
 import ComandoGeekLogo from '../../assets/comando-geek.png';
+import EpomakerLogo from '../../assets/epomaker.webp';
 import { Card } from './card';
 import { Container, Content } from './styles';
 import { Title } from '../../components/Title';
@@ -50,6 +51,12 @@ export const Partnerships = () => {
           description='Você pode adquirir itens usando meu link de afiliado e,
           com o cupom disponível, ainda garantir um desconto, além de me ajudar!'>
           <img src={ComandoGeekLogo} alt="Logo comando geek" />
+        </Card>
+        <Card
+          program='Epomaker'
+          description='Você pode adquirir itens usando meu link de afiliado e,
+          com o cupom disponível, ainda garantir um desconto, além de me ajudar!'>
+          <img src={EpomakerLogo} alt="Logo Epomaker" />
         </Card>
       </Content>
     </Container>
