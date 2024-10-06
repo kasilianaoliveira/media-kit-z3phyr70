@@ -1,48 +1,51 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { BoxStyled, ButtonStyled, ButtonStyledClose, ButtonStyledContact, Container, MenuStyled, SpanBigStyled } from "./styles";
-
+import { BoxStyled, ButtonStyled, Container, Content, MenuStyled } from "./styles";
+import Icon from "../../../../assets/logoIcon.svg"
 export const Menu = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  useEffect(() => {
+    if (showMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [showMenu]);
 
   return (
     <Container>
-      <BoxStyled>
-        <SpanBigStyled></SpanBigStyled>
-      </BoxStyled>
-      <ButtonStyled showMenu={showMenu} onClick={toggleMenu}>
-        {showMenu ? <FaTimes /> : <FaBars />}
-      </ButtonStyled>
+      <Content>
+        <BoxStyled>
+          <img src={Icon} />
+        </BoxStyled>
+        <ButtonStyled showMenu={showMenu} onClick={toggleMenu}>
+          {showMenu ? <FaTimes /> : <FaBars />}
+        </ButtonStyled>
 
-      <MenuStyled showMenu={showMenu}>
-        <li>
-          <a href="/">Inicio</a>
-        </li>
-        <li>
-          <a href="#about">Sobre mim</a>
-        </li>
-        <li>
-          <a href="#social-media">Meus números</a>
-        </li>
-        <li>
-          <a href="#partnerships">Parcerias e patronício</a>
-        </li>
-        <li>
-          <ButtonStyledContact>
-            <a href="#contact">Entre em contato</a>
-          </ButtonStyledContact>
-        </li>
-        {showMenu && (
-          <ButtonStyledClose onClick={toggleMenu} showMenu={showMenu} >
-            <FaTimes />
-          </ButtonStyledClose>
-        )}
-      </MenuStyled>
+        <MenuStyled showMenu={showMenu}>
+          <li onClick={() => setShowMenu(false)}>
+            <a href="#home">Inicio</a>
+          </li>
+          <li onClick={() => setShowMenu(false)}>
+            <a href="#about">Sobre mim</a>
+          </li>
+          <li onClick={() => setShowMenu(false)}>
+            <a href="#partnerships">Parcerias e patrocínios</a>
+          </li>
+          <li onClick={() => setShowMenu(false)}>
+            <a href="#contact">Contato</a>
+          </li>
+        </MenuStyled>
 
+      </Content>
 
     </Container>
   );

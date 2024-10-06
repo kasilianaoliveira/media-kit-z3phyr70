@@ -3,22 +3,18 @@ import styled from "styled-components";
 
 export const Box = styled(motion.div)`
   display: flex;
-  height: calc(100vh - 120px);
+  height: 100vh;
   align-items: center;
   justify-content: space-between;
-
-
+  padding-inline: 20px;
   @media (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    /* height: auto; */
   }
 
-
   @media (max-width: 412px) {
-    height: 100%;
-
     margin-bottom: 30px;
   }
 `;
@@ -26,36 +22,26 @@ export const Box = styled(motion.div)`
 export const BoxContentTitle = styled.div`
   display: flex;
   flex-direction: column;
-  position: relative;
 
-  h1 {
-    font-size: 4.5rem;
-  }
-  span {
-    font-size: 9.375rem;
-    font-weight: bold;
-    color: #3d3d3d;
-  }
-
-  @media (max-width: 1366px) {
-
-    span {
-      font-size: 6rem;
-    }
-  }
-
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2.5rem;
-    }
-    span {
-      font-size: 4.375rem;
-    }
+  @media (max-width: 468px) {
+    order: 2;
+    align-items: center;
   }
 `;
 export const BoxContentImage = styled.div`
-
-  @media (max-width: 412px) {
+  position: relative;
+  img {
+    z-index: 3;
+    top: -300px;
+    right: -90px;
+    width: auto;
+  }
+  @media (max-width: 1200px) {
+    img {
+      width: 350px;
+    }
+  }
+  @media (max-width: 468px) {
     img {
       width: 300px;
     }

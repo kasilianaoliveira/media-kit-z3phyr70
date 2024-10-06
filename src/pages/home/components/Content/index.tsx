@@ -1,5 +1,7 @@
 import { Box, BoxContentImage, BoxContentTitle } from './styles'
-import SquareImg from "../../../../assets/zephyr.svg";
+import ProfileImg from "../../../../assets/profile.webp";
+import { Title } from '../../../../components/Title';
+import { SocialMedia } from '../SocialMedia';
 
 export const Content = () => {
   return (
@@ -10,11 +12,12 @@ export const Content = () => {
       transition={{ duration: 0.5 }}
     >
       <BoxContentTitle>
-        <h1>Z3PHYR70</h1>
-        <span>Streamer</span>
+        <Title title='Z3phyr70' size={160}/>
+        <Title title='Streamer'size={120}/>
+        <SocialMedia/>
       </BoxContentTitle>
       <BoxContentImage>
-        <img src={SquareImg} alt="Imagem de Zephyr70" />
+        <img src={ProfileImg} alt="Imagem de Zephyr70" />
       </BoxContentImage>
     </Box>
   )

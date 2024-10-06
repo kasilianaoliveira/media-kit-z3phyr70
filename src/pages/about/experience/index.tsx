@@ -1,24 +1,24 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
+import { Title } from '../../../components/Title';
 
 export const Experience = () => {
   return (
     <Container>
-      <SubTitle>
-        Experiências com Organizações
-      </SubTitle>
+      <Title 
+      size={48}
+      title=' Experiências com Organizações'/>
+       
+      
       <Content
-       initial={{ opacity: 0, x: -200 }}
-       whileInView={{ opacity: 1, x: 0 }}
-       exit={{ opacity: 0, x: -200 }}
-       transition={{ duration: 0.7 }}
+        initial={{ opacity: 0, x: -200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -200 }}
+        transition={{ duration: 0.7 }}
       >
         <ContentExperience>
           <Position>
             <h3>Adventury.gg</h3>
-            <SecondaryText>
-              Atualmente
-            </SecondaryText>
           </Position>
 
           <SecondaryText>
@@ -52,25 +52,16 @@ export const Experience = () => {
   )
 }
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   gap: 20px;
+  margin-bottom: 100px;
 `;
 
-export const SubTitle = styled.h2`
-  text-transform: uppercase;
-  background: radial-gradient(47.96% 976.55% at 53.59% 49.72%, #FFFFFF 0%, #706A6A 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-size: 3rem;
-  font-weight: 400;
-
-`;
 
 export const Content = styled(motion.div)`
   display: flex;
