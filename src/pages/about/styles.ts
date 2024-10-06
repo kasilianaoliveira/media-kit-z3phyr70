@@ -10,79 +10,48 @@ export const Container = styled(motion.div)`
   position: relative;
   width: 100%;
   height: 100vh;
+  margin: 100px auto;
+  max-width: 1200px;
 
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-    }
-
-    &::after {
-      bottom: -10px;
-    }
-  }
-
-  @media (max-width: 412px) {
-    margin-top: 100px;
-    margin-bottom: 180px;
-
-
-    &::after {
-      bottom: -100px;
-    }
-  }
-`;
-
-
-
-export const ImageContent = styled.div`
-  img {
-    width: 500px;
-  }
-  @media (max-width: 768px) {
-    img {
-      width: 25rem;
-    }
-  }
-
-  @media (max-width: 412px) {
-    img {
-      width: 300px;
-    }
-  }
 `;
 
 
 export const TextContent = styled(motion.div)`
   display: flex;
-  padding: 0 20px;
   align-items: center;
   margin-top: 60px;
-  gap: 40px;
-
-  div {
-    display: flex;
-    gap: 10px;
+  gap: 20px;
+  max-width: 100%;
+  @media (max-width: 900px) {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  }
+`;
+export const ImageContent = styled.div`
+  img {
+    max-width: 100%;
+    width: 500px;
+    object-fit: cover;
+  }
+`;
 
-    p{
-      /* font-size: 20px; */
-      line-height: 1.8;
-      text-align: justify;
-    }
+export const Description = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+
+
+  p {
+    max-width: 100%;
+    line-height: 1.8;
+    font-size: 1rem;
+    text-align: justify;
   }
 
-  @media (max-width: 412px) {
-    p {
-      font-size: 14px;
-    }
+  @media (max-width: 900px) {
+    max-width: 100%;
   }
+
 `;
